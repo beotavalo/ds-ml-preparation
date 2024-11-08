@@ -1,1 +1,1 @@
-This are probles form basic to advance in python, bash, YAML.
+These are problems from basic to advance in python, bash, YAML.
