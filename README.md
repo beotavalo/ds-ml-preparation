@@ -2,7 +2,7 @@
 
 > "Every great journey begins with a single line of code." 
 
-This repository serves as your companion on the challenging yet rewarding path to becoming a Data Scientist or ML Engineer. Think of it as your quest log, where each challenge conquered brings you closer to your dream role.
+This repository is your companion on the challenging yet rewarding path to becoming a Data Scientist or ML Engineer. Think of it as your quest log, where each challenge conquered brings you closer to your dream role.
 
 ## 🎯 Quest Overview
 
@@ -103,10 +103,9 @@ Track your progress using this repository's issue templates:
 - Participate in weekly challenge discussions
 
 ## 📚 Legendary Scrolls (Resources)
-- [Cracking the Coding Interview](book_link)
-- [Designing Data-Intensive Applications](book_link)
-- [Machine Learning System Design Interview](book_link)
-- [Feature Engineering for ML](book_link)
+- [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+- [Designing Data-Intensive Applications](https://dataintensive.net/)
+- [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
 
 Remember, young data warrior, consistency is your most potent weapon. May your models be accurate and your code bug-free! 
 
