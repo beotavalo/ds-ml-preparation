@@ -107,6 +107,8 @@ Track your progress using this repository's issue templates:
 - [Designing Data-Intensive Applications](https://dataintensive.net/)
 - [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
 
+## 📚 References
+
 Remember, young data warrior, consistency is your most potent weapon. May your models be accurate and your code bug-free! 
 
 *"The difference between a novice and a master is that a master has failed more times than a novice has tried."*
