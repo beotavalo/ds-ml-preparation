@@ -44,6 +44,10 @@ project_name/
 - Document complex algorithms
 - Use type hints for better code readability
 - Follow PEP 8 style guide
+- Use conventional commits for version control
+  - Format: `<type>[optional scope]: <description>`
+  - Types: feat, fix, docs, style, refactor, test, chore
+  - Example: `feat(model): add support for gradient clipping`
 
 ### Example Interface Structure
 ```python
@@ -169,6 +173,11 @@ class ModelInterface(ABC):
    - Feature engineering
    - Model training components
    - Utility functions
+   - Maintain code coverage threshold
+     - Initial threshold: 60%
+     - Quarterly increase: 5-10% based on team capacity
+     - Target threshold: 80%
+   - Configure coverage reporting in CI pipeline
 
 2. Integration Tests
    - End-to-end pipeline
@@ -179,6 +188,22 @@ class ModelInterface(ABC):
    - Model inference time
    - Data processing speed
    - Memory usage
+
+### Example Test Configuration
+```python
+# pytest.ini
+[pytest]
+addopts = --cov=src --cov-report=term-missing --cov-fail-under=60
+
+# In CI pipeline (GitHub Actions)
+jobs:
+  test:
+    steps:
+      - name: Run tests with coverage
+        run: |
+          pytest --cov=src --cov-report=xml --cov-fail-under=60
+          bash <(curl -s https://codecov.io/bash)
+```
 
 ### Example Test Structure
 ```python
@@ -193,6 +218,8 @@ def test_data_loader():
     assert data is not None
     assert len(data) > 0
 ```
+
+
 
 ## 7. Monitoring & Maintenance
 
@@ -294,6 +321,57 @@ def test_data_loader():
 - Track technical debt
 
 ### Tools
-- Jira/Trello for task tracking
+- [Linear](https://linear.app/)/ Jira / Trello for task tracking
 - Slack/Teams for communication
 - Confluence/Wiki for documentation
+
+## 13. Version Control Best Practices
+
+### Data and Model Management
+1. Use Git submodules for data and model storage
+   - Create separate repositories for data and models
+   - Reference them in main project using .gitmodules
+   - Benefits:
+     - Reduced main repository size
+     - Faster CI/CD pipeline execution
+     - Better version control for large files
+     - Flexible access control for sensitive data
+
+2. Example .gitmodules configuration:
+```
+[submodule "data"]
+    path = data
+    url = git@github.com:organization/project-data.git
+[submodule "models"]
+    path = models
+    url = git@github.com:organization/project-models.git
+```
+
+### Commit Message Standards
+1. Follow Conventional Commits specification
+   - Format: `<type>[optional scope]: <description>`
+   - Types:
+     - feat: New features
+     - fix: Bug fixes
+     - docs: Documentation changes
+     - style: Formatting changes
+     - refactor: Code refactoring
+     - test: Adding/modifying or performing tests of the features
+     - chore: Maintenance tasks
+     - perf: Performance improvements
+     - build: Changes that affect the build system or external dependencies
+     - ci: Changes to CI configuration files and scripts
+        
+**Example commit messages:**
+   ```
+   feat(preprocessing): add new data normalization pipeline
+   fix(model): resolve memory leak in batch processing
+   docs(readme): update installation instructions
+   test(coverage): increase unit test coverage to 70%
+   ```
+
+**Benefits:**
+   - Automated versioning
+   - Clear change history
+   - Automated changelog generation
+   - Better code review process
