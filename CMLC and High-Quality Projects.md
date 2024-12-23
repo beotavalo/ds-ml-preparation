@@ -116,4 +116,5 @@ These best practices will help you maintain a high-quality standard for your Pyt
 - [Clean Machine Learning Code - Book](https://leanpub.com/cleanmachinelearningcode)
 - [Clean ML Code - Medium](https://towardsdatascience.com/clean-machine-learning-code-bd32bd0e9212)
 - [Clean Architecture: How to Structure Your ML Projects to Reduce Technical Debt by Laszlo Sragner](https://youtu.be/IXML9CVDszo)
+- [Setting up Python Projects - Medium series](https://towardsdatascience.com/setting-up-python-projects-part-i-408603868c08)
 
