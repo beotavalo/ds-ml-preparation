@@ -106,6 +106,7 @@ Track your progress using this repository's issue templates:
 - [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 - [Designing Data-Intensive Applications](https://dataintensive.net/)
 - [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
+- [Clan ML Code](https://towardsdatascience.com/clean-code-for-data-scientists-6fc90872398f)
 
 ## 📚 References
 
